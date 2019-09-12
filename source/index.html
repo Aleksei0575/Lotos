@@ -22,8 +22,41 @@
     <meta name="description" content="Центр йоги Лотос - Йога для начинающих">
   </head>
   <body class="global-style">
-    <h1>Проект Лотос</h1>
-    <p>Йога для начинающих</p>
-    <p>Мой второй проект(адаптивная верстка)</p>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__button main-nav__button--closed main-nav__button--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a href="#" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Направления</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Преподаватели</a></li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Абонементы</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Расписание</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Отзывы</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page-header__logo">
+<!--        <img class="page-header__logo-image" src="img/logo.svg" width="40" height="25" alt="Логотип сайта">-->
+        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">
+          <use xlink:href="#icon-logo"/>
+        </svg>
+      </a>
+    </header>
   </body>
 </html>
