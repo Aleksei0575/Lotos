@@ -1,8 +1,128 @@
 .first-page {
-  width: 201px;
+  margin: 0 auto;
+  margin-bottom: 235px;
+  width: 335px;
   height: 300px;
-  background-image: url("../../img/image-one.jpg");
+  top: 1px;
+  left: 25px;
+  background-image: url("../../img/image-first-mobile.png");
   background-size: 210px 305px;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 60px 0;
+  text-align: center;
+}
+
+.first-page__rotate {
+  display: block;
+  font-weight: normal;
+  transform: rotate(-90deg);
+  color: transparent;
+  -webkit-background-clip: text;
+  //background-clip: text;
+  background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+  position: relative;
+  left: -160px;
+  bottom: -335px;
+}
+
+.first-page__name {
+  font-family: "Geometria", sans-serif;
+  font-size: 120px;
+  font-weight: 500;
+  color: transparent;
+  -webkit-background-clip: text;
+  //background-clip: text;
+  background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+  position: relative;
+  left: 8px;
+  bottom: -305px;
+}
+
+.first-page__text {
+  margin: 0;
+  padding-left: 55px;
+  position: relative;
+  bottom: -315px;
+  font-family: "Geometria", sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+  width: 260px;
+  color: #373535;
+  //opacity: 0.5;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background: #ee3b33;
+    background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "+";
+    top: 11px;
+    left: 17px;
+    font-size: 40px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .first-page {
+    background-image: url(../../img/image-first-tablet.png);
+    background-size: 319px 590px;
+    background-repeat: no-repeat;
+    background-position: 449px 0;
+    min-width: 768px;
+    height: 590px;
+  }
+
+  .first-page__rotate {
+    font-size: 18px;
+    left: -346px;
+    top: 244px;
+  }
+
+  .first-page__name {
+    width: 365px;
+    font-size: 150px;
+    left: -135px;
+    top: 208px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 99px;
+      left: 122px;
+      width: 30px;
+      height: 30px;
+      background: #ee3b33;
+      background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 111px;
+      left: 133px;
+      width: 0px;
+      height: 0px;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 7px solid #ffffff;
+    }
+  }
+
+  .first-page__text {
+    width: 330px;
+    font-size: 20px;
+    left: 27px;
+    top: 235px;
+  }
 }
