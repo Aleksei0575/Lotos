@@ -26,8 +26,8 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
-        <button class="main-nav__button main-nav__button--closed main-nav__button--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__button main-nav__button--closed main-nav__button--opened" type="button"><span class="main-nav__text--menu">Меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
             <a href="#" class="main-nav__link">Главная</a>
@@ -53,26 +53,63 @@
         </ul>
       </nav>
       <a class="page-header__logo">
-        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">
-          <use xlink:href="#icon-logo"/>
-        </svg>
+<!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
+<!--          <use xlink:href="#icon-logo"/>-->
+<!--        </svg>-->
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-tablet.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+          <img src="img/logo-mobile.png" srcset="img/logo-mobile.png" width="40" height="25" alt="Изображение логотипа">
+        </picture>
       </a>
+      <div class="page-header__telephone">
+        <a href="tel:+7 (812) 345-56-97" aria-label="Номер телефона компании">+7 (812) 345-56-97</a>
+      </div>
     </header>
     <main class="main-content">
       <section class="first-page">
-        <h1 class="first-page__title"><span>Центр йоги</span>Lotos</h1>
+        <h1 class="visually-hidden">Центр йоги Lotos</h1>
+        <span class="first-page__rotate">Центр йоги</span>
+        <span class="first-page__name">Lotos</span>
+        <a href="#">
+          <p class="first-page__text">Приглашаем вас и ваших друзей на бесплатное пробное занятие</p>
+        </a>
       </section>
-
-<!--      <picture>-->
-<!--        <source media="(min-width: 1200px)" srcset="img/image-one-desktop@1x.jpg 1x, img/image-one-desktop@1x.jpg 2x">-->
-<!--        <source media="(min-width: 768px)" srcset="img/image-one-tablet@1x.jpg 1x, img/image-one-tablet@1x.jpg 2x">-->
-<!--        <img src="img/image-one.jpg" srcset="img/image-one.jpg 2x" width="201" height="300" alt="Изображение на главной странице">-->
-<!--      </picture>-->
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__number-page">
+        <span>01</span>
+        <span>- 09</span>
+      </div>
+      <div class="page-footer__social">
+        <ul class="page-footer__list">
+          <li class="page-footer__item page-footer__item--vk">
+            <a class="page-footer__link">vk</a>
+          </li>
+          <li class="page-footer__item page-footer__item--fb">
+            <a class="page-footer__link">fb</a>
+          </li>
+          <li class="page-footer__item page-footer__item--inst">
+            <a class="page-footer__link">inst</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__next-page">
+        <a href="#" class="page-footer__button visually-hidden"></a>
+      </div>
+    </footer>
+
+    <!--      <picture>-->
+    <!--        <source media="(min-width: 1200px)" srcset="img/image-first-mobile.jpg 1x, img/image-first-mobile.jpg 2x">-->
+    <!--        <source media="(min-width: 768px)" srcset="img/image-first-mobile.jpg 1x, img/image-first-mobile.jpg 2x">-->
+    <!--        <img src="img/image-first-mobile.jpg" srcset="img/image-first-mobile.jpg 2x" width="201" height="300" alt="Изображение на главной странице">-->
+    <!--      </picture>-->
 
     <script>
       var navMain = document.querySelector('.main-nav');
       var navButton = document.querySelector('.main-nav__button');
+      var navMenu = document.querySelector('.main-nav__text--menu');
+      var intViewportWidth = window.innerWidth;
 
       navMain.classList.remove('main-nav--nojs');
 
@@ -80,11 +117,20 @@
         if (navMain.classList.contains('main-nav--closed')) {
           navMain.classList.remove('main-nav--closed');
           navMain.classList.add('main-nav--opened');
+          // navMenu.style.display = 'none';
+          navMenu.classList.add('visually-hidden');
         } else {
           navMain.classList.add('main-nav--closed');
           navMain.classList.remove('main-nav--opened');
+          // navMenu.style.display = 'block';
+          navMenu.classList.remove('visually-hidden');
         }
       });
     </script>
   </body>
 </html>
+<!--if (intViewportWidth < 768) {-->
+<!--navMenu.style.display = 'none';-->
+<!--} else if (intViewportWidth >= 768) {-->
+<!--navMenu.style.display = 'block';-->
+<!--}-->
