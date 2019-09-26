@@ -1,0 +1,128 @@
+.page-footer {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__number-page {
+  width: 30px;
+  margin-right: 88px;
+}
+
+.page-footer__number-page span {
+  font-family: "Geometria", sans-serif;
+  font-weight: 300;
+
+  &:first-child {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 24px;
+    color: transparent;
+    -webkit-background-clip: text;
+    //background-clip: text;
+    background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+  }
+
+  &:last-child {
+    display: inline-block;
+    font-size: 14px;
+    color: transparent;
+    -webkit-background-clip: text;
+    //background-clip: text;
+    background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+  }
+}
+
+.page-footer__social {
+  margin-right: 82px;
+}
+
+.page-footer__list {
+  .ul-reset();
+  padding-top: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.page-footer__item--vk {
+  padding-right: 29px;
+}
+
+.page-footer__item--fb {
+  padding-right: 29px;
+}
+
+.page-footer__next-page {
+  position: relative;
+  width: 30px;
+  top: 10px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: #ee3b33;
+    background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 13px;
+    left: 11px;
+    width: 0px;
+    height: 0px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 7px solid #ffffff;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__number-page {
+    width: 67px;
+    padding-bottom: 13px;
+    margin-right: 13px;
+    order: 1;
+  }
+
+  .page-footer__next-page {
+    order: -1;
+  }
+
+  .page-footer__number-page span {
+
+    &:first-child {
+      font-size: 72px;
+      padding-top: 13px;
+      padding-bottom: 17px;
+    }
+
+    &:last-child {
+      font-size: 30px;
+      padding-left: 9px;
+      padding-top: 5px;
+      width: 67px;
+    }
+  }
+
+  .page-footer__social {
+    margin-right: 0;
+    padding-top: 52px;
+    padding-left: 32px;
+  }
+
+  .page-footer__next-page {
+    top: 62px;
+    left: 5px;
+    max-height: 50px;
+  }
+}
