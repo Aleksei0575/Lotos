@@ -62,18 +62,35 @@
           <img src="img/logo-mobile.png" srcset="img/logo-mobile.png" width="40" height="25" alt="Изображение логотипа">
         </picture>
       </a>
+      <h2 class="page-header__title-section">Добро пожаловать</h2>
       <div class="page-header__telephone">
         <a href="tel:+7 (812) 345-56-97" aria-label="Номер телефона компании">+7 (812) 345-56-97</a>
       </div>
     </header>
     <main class="main-content">
       <section class="first-page">
-        <h1 class="visually-hidden">Центр йоги Lotos</h1>
+        <h3 class="visually-hidden">Центр йоги Lotos</h3>
+        <div class="first-page__logo">
+          <a class="first-page__logo-link">
+            <!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
+            <!--          <use xlink:href="#icon-logo"/>-->
+            <!--        </svg>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-tablet.png">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+              <img src="img/logo-mobile.png" srcset="img/logo-mobile.png" width="40" height="25" alt="Изображение логотипа">
+            </picture>
+          </a>
+        </div>
         <span class="first-page__rotate">Центр йоги</span>
         <span class="first-page__name">Lotos</span>
         <a href="#">
           <p class="first-page__text">Приглашаем вас и ваших друзей на бесплатное пробное занятие</p>
         </a>
+        <div class="first-page__number number-pages">
+          <span>01</span>
+          <span>- 09</span>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -95,7 +112,7 @@
         </ul>
       </div>
       <div class="page-footer__next-page">
-        <a href="#" class="page-footer__button visually-hidden"></a>
+        <a href="#" class="page-footer__button">Направления и классы</a>
       </div>
     </footer>
 
