@@ -1,0 +1,266 @@
+.description {
+  width: 335px;
+  position: relative;
+}
+
+.description__title {
+  width: 210px;
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+.description__title--color {
+  width: 168px;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 36px;
+  color: transparent;
+  -webkit-background-clip: text;
+  //background-clip: text;
+  background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+}
+
+.description__title--black {
+  width: 208px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+}
+
+.description__toggles {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  font-size: 0;
+}
+
+.description__toggle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: @color-page;
+  border: none;
+  cursor: pointer;
+
+  &--prev {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background: #ee3b33;
+      background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 11px;
+      left: 10px;
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-right: 7px solid #ffffff;
+    }
+  }
+
+  &--next {
+    margin-left: 11px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      background: #ee3b33;
+      background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 11px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 7px solid #ffffff;
+    }
+  }
+}
+
+.description__paragraph {
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+
+  &--first {
+    margin-bottom: 37px;
+  }
+
+  &--second {
+    margin-bottom: 56px;
+  }
+}
+
+.description__button {
+  display: inline-block;
+  margin-bottom: 92px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 50px;
+  position: relative;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+  background-color: @color-button;
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  span {
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: 2px;
+      width: 60px;
+      height: 60px;
+      background: #ee3b33;
+      background-image: linear-gradient(to right,#f78e6a,#fc66a2);
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "+";
+      top: 18px;
+      left: 20px;
+      font-size: 40px;
+      color: #ffffff;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .description {
+    width: 707px;
+  }
+
+  .description__title {
+    width: 215px;
+  }
+
+  .description__title--color {
+    width: 170px;
+    padding-bottom: 16px;
+    display: inline-block;
+  }
+
+  .description__toggles {
+    width: 157px;
+    top: -5px;
+  }
+
+  .description__toggle {
+    display: none;
+  }
+
+  .description__shape-list {
+    .ul-reset();
+    width: 157px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+
+    li:first-child {
+      padding-bottom: 13px;
+    }
+
+    li:nth-child(2) {
+      padding-bottom: 13px;
+    }
+
+    li:nth-child(3) {
+      padding-bottom: 13px;
+    }
+
+    li:nth-child(4) {
+      padding-bottom: 13px;
+    }
+
+    li:nth-child(5) {
+      padding-bottom: 13px;
+    }
+  }
+
+  .description__shape-item {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .description__shape-item--active {
+    opacity: 1;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "Yoga —";
+      width: 72px;
+      left: -72px;
+      color: transparent;
+      -webkit-background-clip: text;
+      //background-clip: text;
+      background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+    }
+  }
+
+  .description__paragraph {
+    width: 437px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description {
+    width: 496px;
+    position: relative;
+    left: 834px;
+  }
+
+  .description__toggles {
+    left: -659px;
+  }
+
+  .description__paragraph {
+    width: 491px;
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
