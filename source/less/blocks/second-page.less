@@ -1,0 +1,46 @@
+.second-page {
+  width: 335px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .second-page {
+    width: 707px;
+    position: relative;
+    margin-top: 114px;
+    margin-bottom: 182px;
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: -221px;
+      right: 5px;
+      background-image: url("../img/image-second-tablet.png");
+      background-size: 213px 500px;
+      background-repeat: no-repeat;
+      background-position: 7px 0;
+      width: 220px;
+      height: 500px;
+    }
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .second-page {
+    width: 1740px;
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: -165px;
+      left: 360px;
+      background-image: url("../img/image-second-desktop.png");
+      background-size: 372px 873px;
+      background-repeat: no-repeat;
+      background-position: 7px 0;
+      width: 372px;
+      height: 873px;
+    }
+  }
+}
