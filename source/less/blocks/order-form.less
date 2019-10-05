@@ -1,0 +1,123 @@
+.order-form__list-user {
+  .ul-reset();
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 35px;
+
+  li:first-child {
+    padding-bottom: 30px;
+  }
+
+  li:last-child {
+    padding-bottom: 42px;
+  }
+}
+
+.order-form__input {
+  width: 335px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: @color-page;
+  color: rgba(0, 0, 0, 0.6);
+
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+  }
+
+  &:focus {
+    outline: 1px solid rgba(0, 0, 0, 1);
+  }
+
+  &:active {
+    color: #000000;
+  }
+}
+
+.order-form__sending {
+  position: relative;
+}
+
+.order-form__icon-send {
+  .pseudo-elem();
+  top: 24px;
+  left: 21px;
+  width: 18px;
+  height: 14px;
+  z-index: 2;
+}
+
+.order-form__button {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 50px;
+  position: relative;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+  background-color: @color-button;
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  span {
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: 2px;
+      width: 60px;
+      height: 60px;
+      background: #ee3b33;
+      background-image: linear-gradient(to right,#f78e6a,#fc66a2);
+      border-radius: 50%;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.order-form__warning {
+  width: 291px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 20px;
+
+  span {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__list-user {
+    font-size: 18px;
+
+    li:first-child {
+      padding-bottom: 43px;
+    }
+
+    li:last-child {
+      padding-bottom: 52px;
+    }
+  }
+
+  .order-form__input {
+    width: 437px;
+  }
+}

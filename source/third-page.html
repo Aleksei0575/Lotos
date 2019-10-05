@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Lotos</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/Geometria.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-ExtraLight.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-ExtraLight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Light.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Medium.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
+    <meta name="keywords" content="йога, йога для начинающих, Аштанга Виньяса, йога универсальная, Айенгара, Терапия, программный комплекс, бесплатное вводное занятие">
+    <meta name="description" content="Центр йоги Лотос - Йога для начинающих">
+  </head>
+  <body class="global-style">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__button main-nav__button--closed main-nav__button--opened" type="button">
+          <span class="main-nav__text-menu">Меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item-directions">
+            <a href="second-page.html" class="main-nav__link">Направления</a>
+          </li>
+          <li class="main-nav__item main-nav__item-teachers">
+            <a href="third-page.html" class="main-nav__link">Преподаватели</a>
+          </li>
+          <li class="main-nav__item main-nav__item-subscriptions">
+            <a href="#" class="main-nav__link">Абонементы</a>
+          </li>
+          <li class="main-nav__item main-nav__item-schedule">
+            <a href="#" class="main-nav__link">Расписание</a>
+          </li>
+          <li class="main-nav__item main-nav__item-reviews">
+            <a href="#" class="main-nav__link">Отзывы</a>
+          </li>
+          <li class="main-nav__item main-nav__item-contacts">
+            <a href="#" class="main-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page-header__logo">
+    <!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
+    <!--          <use xlink:href="#icon-logo"/>-->
+    <!--        </svg>-->
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-tablet.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+          <img src="img/logo-mobile.png" srcset="img/logo-mobile.png" width="40" height="25" alt="Изображение логотипа">
+        </picture>
+      </a>
+      <h2 class="page-header__title-section">Пробное занятие</h2>
+      <div class="page-header__telephone">
+        <a href="tel:+7(812)345-56-97" aria-label="Номер телефона компании">+7 (812) 345-56-97</a>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="third-page">
+        <h3 class="visually-hidden">Форма записи на пробное занятие</h3>
+        <div class="third-page__logo page-logo">
+          <a class="third-page__logo-link">
+        <!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
+        <!--          <use xlink:href="#icon-logo"/>-->
+        <!--        </svg>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-tablet.png">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+              <img src="img/logo-mobile.png" srcset="img/logo-mobile.png" width="40" height="25" alt="Изображение логотипа">
+            </picture>
+          </a>
+        </div>
+        <div class="third-page__subscription subscription">
+          <p class="subscription__discount"><span>10%</span>скидка на абонемент</p>
+          <p class="subscription__specification">
+            Мы сделаем для вас 10% скидку на абонемент, купленный в день посещения вводного занятия.
+          </p>
+          <form action="https://echo.htmlacademy.ru" method="post" class="third-page__form order-form">
+            <div class="order-form__user-data">
+              <ul class="order-form__list-user">
+                <li class="order-form__item order-form__item--name">
+                  <label class="order-form__label order-form__label--name" for="input-name"></label>
+                  <input class="order-form__input order-form__input--text" type="text" name="name" id="input-name" placeholder="Ваше имя">
+                </li>
+                <li class="order-form__item order-form__item--phone">
+                  <label class="order-form__legend order-form__legend--phone" for="input-phone"></label>
+                  <input class="order-form__input order-form__input-phonetext order-form__input--tel" type="tel" name="phone" id="input-phone" pattern="\+7\s?\d{3}\s?\d{3}\s?\d{2}\s?\d{2}" placeholder="Ваш телефон">
+                </li>
+              </ul>
+            </div>
+            <div class="order-form__sending">
+
+              <button class="order-form__submit order-form__button" type="submit" value="Отправить">
+                <svg class="order-form__icon order-form__icon-send" x="0px" y="0px" width="18px" height="14px">
+                  <use xlink:href="#icon-send"/>
+                </svg>
+                <span>Отправить заявку</span>
+              </button>
+              <p class="order-form__warning">
+                Нажимая «Отправить заявку», вы даете <span>согласие</span> на обработку своих персональных данных
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="third-page__number number-pages">
+          <span>02</span>
+          <span>- 09</span>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__number-page footer-second">
+        <span>02</span>
+        <span>- 09</span>
+      </div>
+      <div class="page-footer__social">
+        <ul class="page-footer__list">
+          <li class="page-footer__item page-footer__item--vk">
+            <a class="page-footer__link">vk</a>
+          </li>
+          <li class="page-footer__item page-footer__item--fb">
+            <a class="page-footer__link">fb</a>
+          </li>
+          <li class="page-footer__item page-footer__item--inst">
+            <a class="page-footer__link">inst</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__next-page page-two">
+        <a href="#" class="page-footer__button">Пробное занятие</a>
+      </div>
+    </footer>
+
+<!--      <picture>-->
+<!--        <source media="(min-width: 1200px)" srcset="img/image-first-mobile.jpg 1x, img/image-first-mobile.jpg 2x">-->
+<!--        <source media="(min-width: 768px)" srcset="img/image-first-mobile.jpg 1x, img/image-first-mobile.jpg 2x">-->
+<!--        <img src="img/image-first-mobile.jpg" srcset="img/image-first-mobile.jpg 2x" width="201" height="300" alt="Изображение на главной странице">-->
+<!--      </picture>-->
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navButton = document.querySelector('.main-nav__button');
+      var navMenu = document.querySelector('.main-nav__text-menu');
+      // var listElement = document.querySelectorAll('.description__shape-item');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navButton.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          // navMenu.style.display = 'none';
+          navMenu.classList.add('visually-hidden');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          // navMenu.style.display = 'block';
+          navMenu.classList.remove('visually-hidden');
+        }
+      });
+
+      // if (listElement.length) {
+      //   for (var i = 0; i < listElement.length; i++) {
+      //     var activeElement = listElement[i];
+      //
+      //     activeElement("click", function() {
+      //       activeElement.classList.toggle("description__shape-item--active");
+      //     });
+      //   }
+      // }
+    </script>
+  </body>
+</html>
