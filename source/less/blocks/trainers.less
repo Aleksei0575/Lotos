@@ -1,0 +1,186 @@
+.trainers {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 29px;
+    left: 125px;
+    width: 123px;
+    height: 124px;
+    background: #ee3b33;
+    background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+    border-radius: 50%;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: -22px;
+    left: 102px;
+    background-image: url("../img/image-four-mobile.png");
+    background-size: 138px 300px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 138px;
+    height: 300px;
+  }
+}
+
+.trainers__toggles {
+  min-height: 314px;
+  font-size: 0;
+}
+
+.trainers__toggle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: @color-page;
+  border: none;
+  cursor: pointer;
+
+  &--prev {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 115px;
+      left: 21px;
+      width: 30px;
+      height: 30px;
+      background: #ee3b33;
+      background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 126px;
+      left: 31px;
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-right: 7px solid #ffffff;
+    }
+  }
+
+  &--next {
+    margin-left: 11px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 115px;
+      right: 21px;
+      width: 30px;
+      height: 30px;
+      background: #ee3b33;
+      background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 126px;
+      right: 31px;
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 7px solid #ffffff;
+    }
+  }
+}
+
+.trainers__block {
+  display: none;
+}
+
+.trainers__description {
+  width: 335px;
+  margin: 0 auto;
+
+  p {
+    .ul-reset();
+  }
+}
+
+.trainers__name {
+  display: inline-block;
+  padding-bottom: 8px;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 36px;
+}
+
+.trainers__description .trainers__experience {
+  margin-bottom: 37px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 36px;
+}
+
+.trainers__description .trainers__paragraph--first {
+  margin-bottom: 37px;
+}
+
+.trainers__paragraph--second {
+  display: none;
+}
+
+.trainers__button {
+  display: inline-block;
+  margin-bottom: 67px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  padding-right: 50px;
+  position: relative;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+  background-color: @color-button;
+  border-radius: 50px;
+
+  cursor: pointer;
+
+  span {
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: 2px;
+      width: 60px;
+      height: 60px;
+      background: #ee3b33;
+      background-image: linear-gradient(to right,#f78e6a,#fc66a2);
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "+";
+      top: 18px;
+      left: 20px;
+      font-size: 40px;
+      color: #ffffff;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  }
+}
