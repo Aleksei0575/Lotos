@@ -184,3 +184,106 @@
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
   }
 }
+
+@media (min-width: @tablet-width) {
+  .trainers {
+    width: 707px;
+    margin: 0 auto;
+    display: flex;
+
+    &:before {
+      top: 384px;
+      left: 509px;
+      width: 206px;
+      height: 207px;
+    }
+
+    &:after {
+      top: 300px;
+      left: 470px;
+      background-image: url("../img/image-four-tablet.png");
+      background-size: 231px 500px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 231px;
+      height: 500px;
+    }
+  }
+
+  .trainers__toggles {
+    display: none;
+  }
+
+  .trainers__block {
+    display: block;
+  }
+
+  .trainers__list {
+    .ul-reset();
+
+    li:first-child {
+      padding-bottom: 13px;
+    }
+
+    li:nth-child(2) {
+      padding-bottom: 13px;
+    }
+
+    li:nth-child(3) {
+      padding-bottom: 13px;
+    }
+
+    li:nth-child(4) {
+      padding-bottom: 13px;
+    }
+
+    li:nth-child(5) {
+      padding-bottom: 13px;
+    }
+  }
+
+  .trainers__item {
+    opacity: 0.5;
+    padding-left: 84px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .trainers__item--active {
+    opacity: 1;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "Trainer —";
+      width: 89px;
+      left: 0;
+      color: transparent;
+      -webkit-background-clip: text;
+      //background-clip: text;
+      background-image: linear-gradient(to top, #f78e6a, #fc66a2);
+    }
+  }
+
+  .trainers__description {
+    width: 437px;
+    margin: 0;
+    margin-right: 50px;
+    order: -1;
+  }
+
+  .trainers__name {
+    font-size: 48px;
+  }
+
+  .trainers__description .trainers__experience {
+    font-size: 24px;
+  }
+
+  .trainers__description .trainers__paragraph--second {
+    display: block;
+    margin-bottom: 56px;
+  }
+}
