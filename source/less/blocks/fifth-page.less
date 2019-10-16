@@ -1,0 +1,64 @@
+.fifth-page {
+  max-width: 375px;
+  margin-top: 106px;
+  margin-left: 25px;
+  overflow-x: hidden;
+}
+
+.fifth-page__number {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .fifth-page {
+    margin-top: 192px;
+    margin-left: 30px;
+    overflow: inherit;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 299px;
+      right: 22px;
+      background-image: url("../img/image-fifth-tablet.png");
+      background-size: 334px 500px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 334px;
+      height: 500px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fifth-page {
+    max-width: 1740px;
+    margin: 0 auto;
+    margin-top: 144px;
+    margin-bottom: 118px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:after {
+      top: 199px;
+      left: 302px;
+      background-image: url("../img/image-fifth-desktop.png");
+      background-size: 474px 710px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 474px;
+      height: 710px;
+    }
+  }
+
+  .fifth-page__logo {
+    padding-top: 250px;
+  }
+
+  .fifth-page__number {
+    display: block;
+    margin-left: auto;
+    padding-top: 250px;
+  }
+}

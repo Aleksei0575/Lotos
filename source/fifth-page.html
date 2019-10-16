@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Lotos</title>
+    <title>Абонементы</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="preload" href="fonts/Geometria.woff" as="font" crossorigin="anonymous">
@@ -32,7 +32,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a href="#" class="main-nav__link">Главная</a>
+            <a href="index.html" class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item-directions">
             <a href="second-page.html" class="main-nav__link">Направления</a>
@@ -55,25 +55,25 @@
         </ul>
       </nav>
       <a class="page-header__logo">
-<!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
-<!--          <use xlink:href="#icon-logo"/>-->
-<!--        </svg>-->
+        <!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
+        <!--          <use xlink:href="#icon-logo"/>-->
+        <!--        </svg>-->
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-tablet.png">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
           <img src="img/logo-mobile.png" srcset="img/logo-mobile.png" width="40" height="25" alt="Изображение логотипа">
         </picture>
       </a>
-      <h2 class="page-header__title-section">Добро пожаловать</h2>
+      <h2 class="page-header__title-section">Абонементы</h2>
       <div class="page-header__telephone">
         <a href="tel:+7(812)345-56-97" aria-label="Номер телефона компании">+7 (812) 345-56-97</a>
       </div>
     </header>
     <main class="main-content">
-      <section class="first-page">
-        <h3 class="visually-hidden">Центр йоги Lotos</h3>
-        <div class="first-page__logo">
-          <a class="first-page__logo-link">
+      <section class="fifth-page">
+        <h3 class="visually-hidden">Стоимость абонемента</h3>
+        <div class="fifth-page__logo page-logo">
+          <a class="fifth-page__logo-link">
             <!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
             <!--          <use xlink:href="#icon-logo"/>-->
             <!--        </svg>-->
@@ -84,20 +84,56 @@
             </picture>
           </a>
         </div>
-        <span class="first-page__rotate">Центр йоги</span>
-        <span class="first-page__name">Lotos</span>
-        <a href="#">
-          <p class="first-page__text">Приглашаем вас и ваших друзей на бесплатное пробное занятие</p>
-        </a>
-        <div class="first-page__number">
-          <span>01</span>
+        <div class="fifth-page__subscriptions subscriptions">
+          <div class="subscriptions__list">
+            <p class="subscriptions__item subscriptions__one-time">
+              <span class="subscriptions__name">Разовое занятие</span>
+              <span class="subscriptions__cost-number">300</span>
+              <span class="subscriptions__cost-text">руб.</span>
+            </p>
+            <p class="subscriptions__item subscriptions__month">
+              <span class="subscriptions__name">Месяц занятий</span>
+              <span class="subscriptions__cost-number">2000</span>
+              <span class="subscriptions__cost-text">руб.</span>
+            </p>
+            <p class="subscriptions__item subscriptions__two-month">
+              <span class="subscriptions__name">2 месяца занятий</span>
+              <span class="subscriptions__cost-number">3500</span>
+              <span class="subscriptions__cost-text">руб.</span>
+            </p>
+            <p class="subscriptions__item subscriptions__three-month">
+              <span class="subscriptions__name">3 месяца занятий</span>
+              <span class="subscriptions__cost-number">4500</span>
+              <span class="subscriptions__cost-text">руб.</span>
+            </p>
+            <p class="subscriptions__item subscriptions__half-year">
+              <span class="subscriptions__name">Пол года занятий</span>
+              <span class="subscriptions__cost-number">8000</span>
+              <span class="subscriptions__cost-text">руб.</span>
+            </p>
+            <p class="subscriptions__item subscriptions__year">
+              <span class="subscriptions__name">Год занятий</span>
+              <span class="subscriptions__cost-number">14000</span>
+              <span class="subscriptions__cost-text">руб.</span>
+            </p>
+            <a href="#" class="subscriptions__button">
+              <span>
+                <svg class="subscriptions__icon" x="0px" y="0px" width="13px" height="10px">
+                  <use xlink:href="#icon-checked"/>
+                </svg>
+              </span>Заказать абонемент</a>
+          </div>
+        </div>
+
+        <div class="fifth-page__number number-pages">
+          <span>05</span>
           <span>- 09</span>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__number-page">
-        <span>01</span>
+      <div class="page-footer__number-page footer-fifth">
+        <span>05</span>
         <span>- 09</span>
       </div>
       <div class="page-footer__social">
@@ -113,22 +149,16 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__next-page">
-        <a href="second-page.html" class="page-footer__button">Направления и классы</a>
+      <div class="page-footer__next-page page-footer__five">
+        <a href="#" class="page-footer__button">Расписание</a>
       </div>
     </footer>
-
-    <!--      <picture>-->
-    <!--        <source media="(min-width: 1200px)" srcset="img/image-first-mobile.jpg 1x, img/image-first-mobile.jpg 2x">-->
-    <!--        <source media="(min-width: 768px)" srcset="img/image-first-mobile.jpg 1x, img/image-first-mobile.jpg 2x">-->
-    <!--        <img src="img/image-first-mobile.jpg" srcset="img/image-first-mobile.jpg 2x" width="201" height="300" alt="Изображение на главной странице">-->
-    <!--      </picture>-->
 
     <script>
       var navMain = document.querySelector('.main-nav');
       var navButton = document.querySelector('.main-nav__button');
       var navMenu = document.querySelector('.main-nav__text-menu');
-      var intViewportWidth = window.innerWidth;
+      // var listElement = document.querySelectorAll('.description__shape-item');
 
       navMain.classList.remove('main-nav--nojs');
 
@@ -145,11 +175,16 @@
           navMenu.classList.remove('visually-hidden');
         }
       });
+
+      // if (listElement.length) {
+      //   for (var i = 0; i < listElement.length; i++) {
+      //     var activeElement = listElement[i];
+      //
+      //     activeElement("click", function() {
+      //       activeElement.classList.toggle("description__shape-item--active");
+      //     });
+      //   }
+      // }
     </script>
   </body>
 </html>
-<!--if (intViewportWidth < 768) {-->
-<!--navMenu.style.display = 'none';-->
-<!--} else if (intViewportWidth >= 768) {-->
-<!--navMenu.style.display = 'block';-->
-<!--}-->
