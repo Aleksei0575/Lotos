@@ -1,0 +1,11 @@
+.six-page {
+  max-width: 375px;
+  margin-top: 59px;
+  margin-left: 25px;
+  margin-bottom: 33px;
+  overflow-x: hidden;
+}
+.six-page__number {
+  display: none;
+}
+/*# sourceMappingURL=six-page.css.map */

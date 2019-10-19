@@ -1,10 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Расписание</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/Geometria.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-ExtraLight.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-ExtraLight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Light.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Medium.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
+    <meta name="keywords" content="йога, йога для начинающих, Аштанга Виньяса, йога универсальная, Айенгара, Терапия, программный комплекс, бесплатное вводное занятие">
+    <meta name="description" content="Центр йоги Лотос - Йога для начинающих">
+  </head>
+  <body class="global-style">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__button main-nav__button--closed main-nav__button--opened" type="button">
+          <span class="main-nav__text-menu">Меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item-directions">
+            <a href="second-page.html" class="main-nav__link">Направления</a>
+          </li>
+          <li class="main-nav__item main-nav__item-teachers">
+            <a href="fourth-page.html" class="main-nav__link">Преподаватели</a>
+          </li>
+          <li class="main-nav__item main-nav__item-subscriptions">
+            <a href="third-page.html" class="main-nav__link">Абонементы</a>
+          </li>
+          <li class="main-nav__item main-nav__item-schedule">
+            <a href="fifth-page.html" class="main-nav__link">Расписание</a>
+          </li>
+          <li class="main-nav__item main-nav__item-reviews">
+            <a href="#" class="main-nav__link">Отзывы</a>
+          </li>
+          <li class="main-nav__item main-nav__item-contacts">
+            <a href="#" class="main-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page-header__logo">
+        <!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
+        <!--          <use xlink:href="#icon-logo"/>-->
+        <!--        </svg>-->
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-tablet.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+          <img src="img/logo-mobile.png" srcset="img/logo-mobile.png" width="40" height="25" alt="Изображение логотипа">
+        </picture>
+      </a>
+      <h2 class="page-header__title-section">Расписание</h2>
+      <div class="page-header__telephone">
+        <a href="tel:+7(812)345-56-97" aria-label="Номер телефона компании">+7 (812) 345-56-97</a>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="six-page">
+        <h3 class="visually-hidden">Расписание занятий</h3>
+        <div class="six-page__logo page-logo">
+          <a class="six-page__logo-link">
+            <!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
+            <!--          <use xlink:href="#icon-logo"/>-->
+            <!--        </svg>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-tablet.png">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+              <img src="img/logo-mobile.png" srcset="img/logo-mobile.png" width="40" height="25" alt="Изображение логотипа">
+            </picture>
+          </a>
+        </div>
+        <div class="six-page__schedule schedule">
+          <table class="schedule__table">
+            <tr class="schedule__first-line">
+              <th class="schedule__download">
+                <span>Скачать расписание
+                  <svg class="schedule__icon" x="0px" y="0px" width="8px" height="10px">
+                    <use xlink:href="#icon-down-arrow"/>
+                  </svg>
+                </span>
+              </th>
+              <th>08:00 − 09:25</th>
+              <th>09:30 − 10:55</th>
+              <th>11:00 − 12:25</th>
+              <th>13:30 − 14:55</th>
+              <th>15:00 − 16:25</th>
+              <th>17:00 − 18:25</th>
+            </tr>
+            <tr class="schedule__second-line">
+              <td><span>Понедельник</span></td>
+              <td>Йога для начинающих</td>
+              <td>Универсальная йога</td>
+              <td>Йога Айенгара</td>
+              <td>Аштанга Виньяса йога</td>
+              <td>Йогатерапия</td>
+              <td>Кундалини йога</td>
+            </tr>
+            <tr class="schedule__third-line">
+              <td><span>Вторник</span></td>
+              <td>Кундалини йога</td>
+              <td>Йогатерапия</td>
+              <td>Аштанга Виньяса йога</td>
+              <td>Йога Айенгара</td>
+              <td>Универсальная йога</td>
+              <td>Йога для начинающих</td>
+            </tr>
+            <tr class="schedule__fourth-line">
+              <td><span>Среда</span></td>
+              <td>Универсальная йога</td>
+              <td>Йога для начинающих</td>
+              <td>Аштанга Виньяса йога</td>
+              <td>Йога Айенгара</td>
+              <td>Кундалини йога</td>
+              <td>Йогатерапия</td>
+            </tr>
+            <tr class="schedule__fifth-line">
+              <td><span>Четверг</span></td>
+              <td>Йога для начинающих</td>
+              <td>Универсальная йога</td>
+              <td>Йога Айенгара</td>
+              <td>Аштанга Виньяса йога</td>
+              <td>Йогатерапия</td>
+              <td>Кундалини йога</td>
+            </tr>
+            <tr class="schedule__sixth-line">
+              <td><span>Пятница</span></td>
+              <td>Кундалини йога</td>
+              <td>Йогатерапия</td>
+              <td>Аштанга Виньяса йога</td>
+              <td>Йога Айенгара</td>
+              <td>Универсальная йога</td>
+              <td>Йога для начинающих</td>
+            </tr>
+            <tr class="schedule__seventh-line">
+              <td><span>Суббота</span></td>
+              <td>Универсальная йога</td>
+              <td>Йога для начинающих</td>
+              <td>Аштанга Виньяса йога</td>
+              <td>Йога Айенгара</td>
+              <td>Кундалини йога</td>
+              <td>Йогатерапия</td>
+            </tr>
+            <tr class="schedule__eighth-line">
+              <td><span>Воскресенье</span></td>
+              <td>Йога для начинающих</td>
+              <td>Универсальная йога</td>
+              <td>Йога Айенгара</td>
+              <td>Аштанга Виньяса йога</td>
+              <td>Йогатерапия</td>
+              <td>Кундалини йога</td>
+            </tr>
+          </table>
+        </div>
 
-</body>
+        <div class="six-page__number number-pages">
+          <span>06</span>
+          <span>- 09</span>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__number-page footer-fifth">
+        <span>06</span>
+        <span>- 09</span>
+      </div>
+      <div class="page-footer__social">
+        <ul class="page-footer__list">
+          <li class="page-footer__item page-footer__item--vk">
+            <a class="page-footer__link">vk</a>
+          </li>
+          <li class="page-footer__item page-footer__item--fb">
+            <a class="page-footer__link">fb</a>
+          </li>
+          <li class="page-footer__item page-footer__item--inst">
+            <a class="page-footer__link">inst</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__next-page page-footer__five">
+        <a href="#" class="page-footer__button"><span>Отзывы</span></a>
+      </div>
+    </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navButton = document.querySelector('.main-nav__button');
+      var navMenu = document.querySelector('.main-nav__text-menu');
+      // var listElement = document.querySelectorAll('.description__shape-item');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navButton.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          // navMenu.style.display = 'none';
+          navMenu.classList.add('visually-hidden');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          // navMenu.style.display = 'block';
+          navMenu.classList.remove('visually-hidden');
+        }
+      });
+
+      // if (listElement.length) {
+      //   for (var i = 0; i < listElement.length; i++) {
+      //     var activeElement = listElement[i];
+      //
+      //     activeElement("click", function() {
+      //       activeElement.classList.toggle("description__shape-item--active");
+      //     });
+      //   }
+      // }
+    </script>
+  </body>
 </html>
