@@ -1,10 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Отзывы</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/Geometria.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-ExtraLight.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-ExtraLight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Light.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Medium.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Geometria-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
+    <meta name="keywords" content="йога, йога для начинающих, Аштанга Виньяса, йога универсальная, Айенгара, Терапия, программный комплекс, бесплатное вводное занятие">
+    <meta name="description" content="Центр йоги Лотос - Йога для начинающих">
+  </head>
+  <body class="global-style">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__button main-nav__button--closed main-nav__button--opened" type="button">
+          <span class="main-nav__text-menu">Меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a href="index.html" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item-directions">
+            <a href="second-page.html" class="main-nav__link">Направления</a>
+          </li>
+          <li class="main-nav__item main-nav__item-teachers">
+            <a href="fourth-page.html" class="main-nav__link">Преподаватели</a>
+          </li>
+          <li class="main-nav__item main-nav__item-subscriptions">
+            <a href="fifth-page.html" class="main-nav__link">Абонементы</a>
+          </li>
+          <li class="main-nav__item main-nav__item-schedule">
+            <a href="six-page.html" class="main-nav__link">Расписание</a>
+          </li>
+          <li class="main-nav__item main-nav__item-reviews">
+            <a href="seventh-page.html" class="main-nav__link">Отзывы</a>
+          </li>
+          <li class="main-nav__item main-nav__item-contacts">
+            <a href="#" class="main-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page-header__logo">
+        <!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
+        <!--          <use xlink:href="#icon-logo"/>-->
+        <!--        </svg>-->
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-tablet.png">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+          <img src="img/logo-mobile.png" srcset="img/logo-mobile.png" width="40" height="25" alt="Изображение логотипа">
+        </picture>
+      </a>
+      <h2 class="page-header__title-section">Отзывы</h2>
+      <div class="page-header__telephone">
+        <a href="tel:+7(812)345-56-97" aria-label="Номер телефона компании">+7 (812) 345-56-97</a>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="seventh-page">
+        <h3 class="visually-hidden">Отзывы клиентов</h3>
+        <div class="seventh-page__logo page-logo">
+          <a class="seventh-page__logo-link">
+            <!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
+            <!--          <use xlink:href="#icon-logo"/>-->
+            <!--        </svg>-->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-tablet.png">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
+              <img src="img/logo-mobile.png" srcset="img/logo-mobile.png" width="40" height="25" alt="Изображение логотипа">
+            </picture>
+          </a>
+        </div>
+        <div class="seventh-page__reviews reviews">
+          <div class="reviews__toggles">
+            <button class="reviews__toggle reviews__toggle--prev" type="button">Prev</button>
+            <button class="reviews__toggle reviews__toggle--next" type="button">Next</button>
+          </div>
+          <div class="reviews__users-block">
+            <ul class="reviews__users-list">
+              <li class="reviews__users-item">Жанна Блиц</li>
+              <li class="reviews__users-item reviews__users-item--active">Арина Наумова</li>
+              <li class="reviews__users-item">Виталий Коробко</li>
+              <li class="reviews__users-item">Елена Снежная</li>
+              <li class="reviews__users-item">Юлиана Ветрова</li>
+            </ul>
+          </div>
+          <div class="reviews__block">
+            <p class="reviews__user-photo">
+              <a class="reviews__user-link">
+                <!--        <svg class="page-header__logo-image" x="0px" y="0px" width="40px" height="25px">-->
+                <!--          <use xlink:href="#icon-logo"/>-->
+                <!--        </svg>-->
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-tablet.png">
+                  <source media="(min-width: 768px)" srcset="img/photo-mobile.jpg">
+                  <img src="img/photo-mobile.jpg" srcset="img/photo-mobile.jpg" width="160" height="160" alt="Фотография пользователя">
+                </picture>
+              </a>
+            </p>
+            <span class="reviews__user-name">Арина Наумова</span>
+            <span class="reviews__user-age">34 года</span>
+            <p class="reviews__paragraph reviews__paragraph--first">
+              Не знаю, как остальные, но после занятий йогой хочется начать новую здоровую жизнь,
+              хочется поесть овощей и фруктов и поднять свой иммунитет.
+              Теперь для меня день занятий йогой — это день здоровья.
+            </p>
+            <a href="#" class="reviews__full">Читать полностью</a>
+            <p class="reviews__paragraph reviews__paragraph--second">
+              После упорных занятий я стала меньше болеть, и поняла,<br>
+              в чем смысл всех упражнений. Позы получаются элегантно,
+              и не больно только тогда, когда не прилагаешь усилия,<br>
+              а остаёшься расслабленным на протяжении всего урока.
+            </p>
+            <a href="#" class="reviews__button"><span></span>Попробовать тоже</a>
+          </div>
+        </div>
 
-</body>
+        <div class="fourth-page__number number-pages">
+          <span>07</span>
+          <span>- 09</span>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__number-page">
+        <span>07</span>
+        <span>- 09</span>
+      </div>
+      <div class="page-footer__social">
+        <ul class="page-footer__list">
+          <li class="page-footer__item page-footer__item--vk">
+            <a class="page-footer__link">vk</a>
+          </li>
+          <li class="page-footer__item page-footer__item--fb">
+            <a class="page-footer__link">fb</a>
+          </li>
+          <li class="page-footer__item page-footer__item--inst">
+            <a class="page-footer__link">inst</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__next-page">
+        <a href="fifth-page.html" class="page-footer__button"><span>Оставить заявку</span></a>
+      </div>
+    </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navButton = document.querySelector('.main-nav__button');
+      var navMenu = document.querySelector('.main-nav__text-menu');
+      // var listElement = document.querySelectorAll('.description__shape-item');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navButton.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          // navMenu.style.display = 'none';
+          navMenu.classList.add('visually-hidden');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          // navMenu.style.display = 'block';
+          navMenu.classList.remove('visually-hidden');
+        }
+      });
+
+      // if (listElement.length) {
+      //   for (var i = 0; i < listElement.length; i++) {
+      //     var activeElement = listElement[i];
+      //
+      //     activeElement("click", function() {
+      //       activeElement.classList.toggle("description__shape-item--active");
+      //     });
+      //   }
+      // }
+    </script>
+  </body>
 </html>
