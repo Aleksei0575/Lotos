@@ -277,3 +277,57 @@
     margin-bottom: 168px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    margin-top: 0;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: -84px;
+      left: -9px;
+      background-image: url("../img/image-seven-desktop.png");
+      background-size: 795px 718px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 795px;
+      height: 718px;
+      z-index: -1;
+    }
+  }
+
+  .reviews__users-block {
+    font-size: 18px;
+    margin-right: 584px;
+    order: -1;
+  }
+
+  .reviews__users-item--active {
+
+    &:before {
+      width: 74px;
+    }
+  }
+
+  .reviews__user-name {
+    width: 235px;
+    padding-top: 102px;
+    padding-bottom: 5px;
+  }
+
+  .reviews__paragraph--first {
+    width: 490px;
+    font-size: 18px;
+  }
+
+  .reviews__paragraph--second {
+    width: 528px;
+    font-size: 18px;
+    padding-bottom: 56px;
+  }
+
+  .reviews__button {
+    margin-bottom: 0;
+  }
+}
